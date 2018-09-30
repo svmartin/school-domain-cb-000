@@ -5,13 +5,13 @@ class School
     @roster = {}
   end
 
-  # def roster=(grade, students)
-  #   @roster[grade] = students
-  # end
-
   def add_student(grade, student_name)
-    @roster[grade] << student_name
+    if @roster.key(grade)
+      @roster[grade] << student_name
+    else
+      @roster[grade] = [student_name]
+    end
   end
 
-  
+
 end
