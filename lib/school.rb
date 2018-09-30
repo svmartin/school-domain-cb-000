@@ -18,6 +18,10 @@ class School
   end
 
   def roster
-    @roster.sort_by { |grade, students| students }
+    @roster
+  end
+
+  def sort
+    @roster.sort_by { |k, v| v }
   end
 end
