@@ -20,6 +20,4 @@ class School
   def roster
     @roster.sort_by { |grade, students| students }
   end
-
-
 end
