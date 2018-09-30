@@ -9,7 +9,9 @@ class School
     if @roster.key?(grade)
       @roster.grade << student_name
     else
-      @roster.grade = [student_name]
+      @roster.grade = []
+      @roster.grade << student_name
+      
     end
   end
 
